@@ -70,10 +70,3 @@ Google BigQuery and SQL.
 | `05_time_to_conversion.sql` | Estimates elapsed time between key events for users who purchased. |
 | `06_revenue_analysis.sql` | Summarises purchase events, purchasing users, total revenue, and average order value. |
 
-## Findings and limitations
-
-The uploaded SQL contains query definitions, not query-result tables. This repository therefore documents what the queries calculate, but does not claim any conversion rates, revenue totals, or highest-performing traffic source.
-
-The time-to-conversion query uses `TIMESTAMP_DIFF(..., MINUTE)`, so confirm that `event_date` is a compatible timestamp/datetime field in your BigQuery table. The time query uses the earliest observed view, cart, and purchase events per user; it does not by itself prove that each event belongs to the same session or a strictly ordered journey.
-
-The original revenue calculation sums `amount` only for purchase events and divides by the count of purchase events. Confirm the meaning and currency of `amount`, and consider whether each purchase event corresponds to a unique order before interpreting the average as average order value.
