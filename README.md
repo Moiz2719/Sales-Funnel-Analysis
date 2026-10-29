@@ -1,8 +1,9 @@
 # User Analytics & Sales Funnel Analysis
 
-A Google BigQuery SQL project that analyses user behaviour across five sales-funnel stages: page view, add to cart, checkout start, payment information, and purchase. The queries measure funnel size, stage-to-stage conversion, acquisition-channel performance, time to conversion, and purchase revenue.
+A Google BigQuery SQL project analysing user events across page view, add to cart, checkout, payment information and purchase stages. It measures funnel size and conversion, compares acquisition channels, examines time to conversion, and summarises purchase revenue and average order value to identify drop-offs and business opportunities.
 
 ## Architecture Overview
+
 ```mermaid
 flowchart TD
     A[BigQuery user_events table] --> B[Count unique users at each funnel stage]
