@@ -2,8 +2,7 @@
 
 A Google BigQuery SQL project that analyses user behaviour across five sales-funnel stages: page view, add to cart, checkout start, payment information, and purchase. The queries measure funnel size, stage-to-stage conversion, acquisition-channel performance, time to conversion, and purchase revenue.
 
-## High-level architecture
-
+## Architecture Overview
 ```mermaid
 flowchart TD
     A[BigQuery user_events table] --> B[Count unique users at each funnel stage]
@@ -55,9 +54,7 @@ Google BigQuery and SQL.
 
 ## Setup and run
 
-1. Make sure you have access to a BigQuery dataset containing an `user_events` table with the fields documented in `Docs/data_dictionary.md`.
-2. In each SQL file, replace `YOUR_PROJECT_ID.YOUR_DATASET.user_events` with your actual fully qualified BigQuery table name.
-3. Open the query file in BigQuery SQL workspace and run it. Review the output before drawing conclusions.
+A Google BigQuery SQL project analysing user events across page view, add to cart, checkout, payment information and purchase stages. It measures funnel size and conversion, compares acquisition channels, examines time to conversion, and summarises purchase revenue and average order value to identify drop-offs and business opportunities.
 
 ## Query modules
 
