@@ -1,0 +1,12 @@
+# Local exports and temporary query results
+*.csv
+*.json
+*.xlsx
+*.parquet
+*.log
+
+# Editor and local environment files
+.DS_Store
+.vscode/
+.idea/
+.env
