@@ -46,7 +46,7 @@ Sales-Funnel-Analysis/
     ├── project_overview.md
     ├── data_dictionary.md
     ├── methodology.md
-    └── findings_and_limitations.md
+    └── findings.md
 ```
 
 ## Tools
